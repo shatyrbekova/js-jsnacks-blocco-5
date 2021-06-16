@@ -23,14 +23,36 @@ var studenti = [
     {nome:'Caio', cognome: 'Verdi', age:'24', descrizione: ''},
     {nome:'Sempronio', cognome: 'Gialli', age:'27', descrizione: ''}
 ]
-for(var k=0; k <studenti.length; k++){
 
-    studenti[0].descrizione= prompt('Inserisci la tua opinione su Tizio' );
-    studenti[1].descrizione= prompt('Inserisci la tua opinione su Caio' );
-    studenti[2].descrizione= prompt('Inserisci la tua opinione su Sempronio' );
+//Dare una descrizione usando direttamente i numeri di posizioni degli studenti in array in esame;
+ 
+    studenti[0].descrizione= prompt('Inserisca la Sua opinione su Tizio' );
+    studenti[1].descrizione= prompt('Inserisca la Sua opinione su Caio' );
+    studenti[2].descrizione= prompt('Inserisca la Sua opinione su Sempronio' );
     
-};
-// studenti.push({
-//     descrizione: userAnswer
-// })
+
 console.log(studenti);
+ 
+ 
+// Per semplificare il nostro lavoro diamo un nome breve all'ID con una variabile;
+
+ var studentList=document.getElementById('studenti');
+
+ // In alternativa potrei usare la seguente formula(for) per chiedere all'utente la sua opinione su ogni studente;
+
+for (var k=0; k<studenti.length; k++){
+    studenti[k].descrizione=prompt('Inserisca la Sua opinione su '+ studenti[k].nome)
+
+    //Per visualizzare nell’html questi dati in una forma tabellare;
+    for (var key in studenti[k]){
+        document.getElementById('studenti').innerHTML +='<br>' + key+':'+studenti[k][key];
+    }
+}
+
+
+
+
+
+
+
+
