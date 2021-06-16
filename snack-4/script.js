@@ -40,7 +40,7 @@ console.log(studenti);
 
  // In alternativa, potrei usare la seguente formula(for) per chiedere all'utente la sua opinione su ogni studente;
 
- table.innerHT='<tbody><tr>';
+ table.innerHTML='<tbody><tr>';
 for (var k=0; k<studenti.length; k++){
     studenti[k].descrizione=prompt('Inserisca la Sua opinione su '+ studenti[k].nome)
 
