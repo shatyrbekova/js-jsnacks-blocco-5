@@ -33,4 +33,4 @@ for(var k=0; k <studenti.length; k++){
 // studenti.push({
 //     descrizione: userAnswer
 // })
-console.log(studenti)
+console.log(studenti);
