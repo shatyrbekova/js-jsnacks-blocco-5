@@ -24,11 +24,11 @@ var studenti = [
     {nome:'Sempronio', cognome: 'Gialli', age:'27', descrizione: ''}
 ]
 
-//Dare una descrizione usando direttamente i numeri di posizioni degli studenti in array in esame;
+//Dare una descrizione, usando direttamente la numerazione della posizione degli studenti nell'array in esame;
  
-    studenti[0].descrizione= prompt('Inserisca la Sua opinione su Tizio' );
-    studenti[1].descrizione= prompt('Inserisca la Sua opinione su Caio' );
-    studenti[2].descrizione= prompt('Inserisca la Sua opinione su Sempronio' );
+    // studenti[0].descrizione= prompt('Inserisca la Sua opinione su Tizio' );
+    // studenti[1].descrizione= prompt('Inserisca la Sua opinione su Caio' );
+    // studenti[2].descrizione= prompt('Inserisca la Sua opinione su Sempronio' );
     
 
 console.log(studenti);
@@ -36,18 +36,22 @@ console.log(studenti);
  
 // Per semplificare il nostro lavoro diamo un nome breve all'ID con una variabile;
 
- var studentList=document.getElementById('studenti');
+ var table=document.getElementById('table');
 
- // In alternativa potrei usare la seguente formula(for) per chiedere all'utente la sua opinione su ogni studente;
+ // In alternativa, potrei usare la seguente formula(for) per chiedere all'utente la sua opinione su ogni studente;
 
+ table.innerHT='<tbody><tr>';
 for (var k=0; k<studenti.length; k++){
     studenti[k].descrizione=prompt('Inserisca la Sua opinione su '+ studenti[k].nome)
 
     //Per visualizzare nell’html questi dati in una forma tabellare;
     for (var key in studenti[k]){
-        document.getElementById('studenti').innerHTML +='<br>' + key+':'+studenti[k][key];
+        document.getElementById('table').innerHTML +='<td></td>' + key+':'+studenti[k][key];
+        table.innerHTML+='</tr></tbody>';
     }
-}
+};
+
+
 
 
 

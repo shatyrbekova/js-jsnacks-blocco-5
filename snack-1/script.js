@@ -3,7 +3,8 @@
 // Peso = 10
 
 var palla ={
-    peso: 10,
+    nome: 'palla',
+    peso: 10
 }
 
 console.log(palla)
