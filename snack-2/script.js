@@ -6,8 +6,9 @@ var triangoloRettangolo ={
     altezza: 9
 }
 
-var ipotenusa = Math.sqrt(Math.pow(triangoloRettangolo.base,2)+Math.pow(triangolo.altezza,2));
+var ipotenusa = Math.sqrt(Math.pow(triangoloRettangolo.base,2)+Math.pow(triangoloRettangolo.altezza,2));
 
+console.log(ipotenusa)
 var perimetro = ipotenusa + triangoloRettangolo.base + triangoloRettangolo.altezza;
 
 console.log(perimetro);
