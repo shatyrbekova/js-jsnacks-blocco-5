@@ -5,8 +5,16 @@ document.addEventListener('DOMContentLoaded', function (){
     constantArray.push(1);
     console.log("🚀 ~ file: script.js ~ line 20 ~ constantArray", constantArray)
 
+ for (let x=0; x<2; x++){
 
+    let ciao;
+    ciao=1;
+    console.log("🚀 ~ file: script.js ~ line 12 ~ ciao", ciao);
+    
+ }
 
+  ciao= 'ciaone';
+  
 
 
 
