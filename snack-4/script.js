@@ -2,19 +2,12 @@
 // nome
 // cognome
 // age
-// descrizione
-// Per nome, cognome ed age assegnate direttamente nel codice i valori che volete.
-// ATTENZIONE: la descrizione invece sarà l’unico valore vuoto, stringa vuota.
-// {
-//   nome: ‘Pippo’,
-//   cognome: ‘Baudo’,
-//   age: 80,
-//   descrizione: ‘’
-// } 
+// descrizione 
 // Successivamente, con dei prompt chiediamo di volta in volta all’utente 
 //la descrizione di ciascun studente, salviamola quindi all’interno della sua proprietà.
 // Nota bene: questo naturalmente, in un ciclo, per ciascun studente. ;)
 // Stampiamo con un console.log il risultato di questo array di studenti aggiornato.
+
 
 //In primis, va creato un array di 3 studenti, con le seguenti proprietà: nome; cognome; age ed infine descrizione;
 
@@ -49,6 +42,7 @@ for (var k=0; k<studenti.length; k++){
         document.getElementById('table').innerHTML +='<td></td>' + key+':'+studenti[k][key];
         table.innerHTML+='</tr></tbody>';
     }
+    
 };
 
 
